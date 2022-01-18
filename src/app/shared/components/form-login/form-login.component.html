@@ -3,12 +3,10 @@
       
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1"><img class="img img-responsive" style="width: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"></span>
+          <span class="input-group-text" id="basic-addon1" [innerHTML]="displayVal"></span>
         </div>
-        <input type="text" class="form-control" (keyup)="checkCreditCard()" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        <input type="text" class="form-control" id="credit_card_id" #credit_card (keyup)="checkCreditCard(credit_card.value)" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
       </div>
-
-    
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
