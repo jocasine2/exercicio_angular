@@ -1,0 +1,6 @@
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1" [innerHTML]="displayVal"><i class="fas fa-star"></i></span>
+    </div>
+    <input type="text" class="form-control" id="credit_card_id" #credit_card (keyup)="checkCreditCard(credit_card.value)" placeholder="Número do cartão" aria-label="Username" aria-describedby="basic-addon1">
+  </div>

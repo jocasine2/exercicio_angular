@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormLoginComponent } from './shared/components/form-login/form-login.component';
+import { InputCreditCardComponent } from './shared/components/input-credit-card/input-credit-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormLoginComponent
+    InputCreditCardComponent
   ],
   imports: [
     BrowserModule,
